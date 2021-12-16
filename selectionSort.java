@@ -6,7 +6,7 @@ public class SelectionSort {
 
         int N = arr.length;
 
-        int i, j, pos, temp;
+        int i = 0, j = 0, pos, temp;
 
         for (i = 0; i < N; i++)
 
@@ -14,7 +14,7 @@ public class SelectionSort {
 
             pos = j;
 
-            for (j = i+1; j < N-1; j++)
+            for (j = i; j < N-1; j++)
 
             {
 
@@ -22,7 +22,7 @@ public class SelectionSort {
 
                 {
 
-                    pos = i;
+                    pos = j;
 
                 }
 
@@ -30,11 +30,11 @@ public class SelectionSort {
 
             /* Swap arr[i] and arr[pos] */
 
-            temp = arr[I];
+            temp = arr[i];
 
             arr[i] = arr[pos];
 
-            arr[pos]= temp;
+            arr[pos] = temp;
 
         }
 
